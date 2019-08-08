@@ -5,7 +5,13 @@
     "start": "yarn lerna run dev --parallel"
   },
   "devDependencies": {
-    "lerna": "^3.5.1"
+    "lerna": "^3.5.1",
+    "@rebass/preset": "^4.0.2",
+    "emotion-theming": "^10.0.14",
+    "rebass": "^4.0.2"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {}
 }

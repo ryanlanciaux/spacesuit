@@ -5,14 +5,17 @@ import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
 
 import { Welcome } from "@storybook/react/demo";
-import Flex from "@spacesuit/flex";
+import Button from "@spacesuit/button";
+import { theme, ThemeProvider } from "@spacesuit/theming";
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ));
 
-storiesOf("Button", module).add("with text", () => (
-  <>
-    <Flex />
-  </>
-));
+storiesOf("Button", module)
+  .add("with text", () => (
+    <ThemeProvider>
+      <Button variant="outline">CLICK ME</Button>
+    </ThemeProvider>
+  ))
+  .add("Without theme", () => <Button sx={{ color: "#000" }}>Click</Button>);
