@@ -1,9 +1,9 @@
 {
-  "name": "@spacesuit/flex",
+  "name": "@spacesuit/button",
   "version": "0.0.1",
-  "main": "dist/flex.js",
-  "umd:main": "dist/flex.umd.js",
-  "module": "dist/flex.m.js",
+  "main": "dist/button.js",
+  "umd:main": "dist/button.umd.js",
+  "module": "dist/button.m.js",
   "source": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -46,7 +46,8 @@
     "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.8.0",
+    "rebass": "^4.0.2"
   },
   "dependencies": {}
 }
