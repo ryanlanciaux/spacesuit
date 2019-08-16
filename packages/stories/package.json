@@ -3,8 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@spacesuit/box": "^0.0.1",
     "@spacesuit/button": "^0.0.1",
+    "@spacesuit/flex": "^0.0.1",
+    "@spacesuit/heading": "^0.0.1",
+    "@spacesuit/link": "^0.0.1",
     "@spacesuit/theming": "^0.0.1",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
