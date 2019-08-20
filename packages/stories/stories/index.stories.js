@@ -6,7 +6,6 @@ import { linkTo } from "@storybook/addon-links";
 
 import { Welcome } from "@storybook/react/demo";
 import Button from "@spacesuit/button";
-import { theme, ThemeProvider } from "@spacesuit/theming";
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -14,8 +13,8 @@ storiesOf("Welcome", module).add("to Storybook", () => (
 
 storiesOf("Button", module)
   .add("with text", () => (
-    <ThemeProvider>
-      <Button variant="outline">CLICK ME</Button>
-    </ThemeProvider>
+    <Button variant="outline" color="primary">
+      CLICK ME
+    </Button>
   ))
-  .add("Without theme", () => <Button sx={{ color: "#000" }}>Click</Button>);
+  .add("Without theme", () => <Button color="primary">Click</Button>);

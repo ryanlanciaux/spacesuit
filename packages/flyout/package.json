@@ -1,9 +1,9 @@
 {
-  "name": "@spacesuit/box",
+  "name": "@spacesuit/flyout",
   "version": "0.0.1",
-  "main": "dist/box.js",
-  "umd:main": "dist/box.umd.js",
-  "module": "dist/box.m.js",
+  "main": "dist/flyout.js",
+  "umd:main": "dist/flyout.umd.js",
+  "module": "dist/flyout.m.js",
   "source": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -20,11 +20,11 @@
     "@babel/core": "^7.5.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "@testing-library/react": "^8.0.8",
     "babel-core": "^7.0.0-bridge.0",
@@ -51,5 +51,9 @@
     "@emotion/core": "^10.0.16",
     "@emotion/styled": "^10.0.15"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.10",
+    "@fortawesome/free-solid-svg-icons": "^5.6.1",
+    "@fortawesome/react-fontawesome": "^0.1.3"
+  }
 }
