@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@emotion/babel-preset-css-prop": "^10.0.14",
     "@spacesuit/box": "^0.0.1",
     "@spacesuit/button": "^0.0.1",
     "@spacesuit/flex": "^0.0.1",
+    "@spacesuit/flyout": "^0.0.1",
+    "@spacesuit/header": "^0.0.1",
     "@spacesuit/heading": "^0.0.1",
     "@spacesuit/link": "^0.0.1",
+    "@spacesuit/spacesuit": "^0.0.1",
     "@spacesuit/theming": "^0.0.1",
-    "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-knobs": "^5.1.11",
-    "@storybook/addon-links": "^5.1.11",
+    "babel-plugin-emotion": "^10.0.16",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -38,9 +41,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
-    "@storybook/addon-actions": "^5.1.10",
-    "@storybook/addon-links": "^5.1.10",
-    "@storybook/addons": "^5.1.10",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
     "@storybook/react": "^5.1.10",
     "babel-loader": "^8.0.6"
   }
