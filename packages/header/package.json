@@ -52,6 +52,7 @@
     "@emotion/styled": "^10.0.15"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.1"
+    "@spacesuit/box": "^0.0.1",
+    "@spacesuit/link": "^0.0.1"
   }
 }

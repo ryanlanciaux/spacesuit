@@ -4,7 +4,6 @@ import { storiesOf } from "@storybook/react";
 
 import Header from "@spacesuit/header";
 import Flex from "@spacesuit/flex";
-import Link from "@spacesuit/link";
 
 storiesOf("Header", module).add("default", () => {
   return (
@@ -18,12 +17,14 @@ storiesOf("Header", module).add("default", () => {
         <Flex mx={32} width={[1, 1 / 2]}>
           <img src="https://fakeimg.pl/300x100/?text=SomeLogo" />
         </Flex>
-        <Flex width={[1, 1 / 2]}>
-          <Link href="#">One</Link>
-          <Link href="#">Two</Link>
-          <Link href="#">Three</Link>
-          <Link href="#">Four</Link>
-          <Link href="#">Five</Link>
+        <Flex width={[1, 1 / 2]} justifyContent="space-between">
+          <Header.Nav>
+            <Header.NavItem href="#">One</Header.NavItem>
+            <Header.NavItem href="#">Two</Header.NavItem>
+            <Header.NavItem href="#">Three</Header.NavItem>
+            <Header.NavItem href="#">Four</Header.NavItem>
+            <Header.NavItem href="#">Five</Header.NavItem>
+          </Header.Nav>
         </Flex>
       </Flex>
     </Header>
