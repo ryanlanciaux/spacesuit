@@ -57,5 +57,6 @@
     "@spacesuit/heading": "^0.0.2",
     "@spacesuit/link": "^0.0.2",
     "@spacesuit/theming": "^0.0.2"
-  }
+  },
+  "gitHead": "60f2615b57f4061d14ad077bddb1b59cbc8bf658"
 }
