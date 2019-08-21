@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/flyout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/flyout.js",
   "umd:main": "dist/flyout.umd.js",
   "module": "dist/flyout.m.js",
@@ -46,10 +46,10 @@
     "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "rebass": "^4.0.2",
     "@emotion/core": "^10.0.16",
-    "@emotion/styled": "^10.0.15"
+    "@emotion/styled": "^10.0.15",
+    "react": "^16.8.0",
+    "rebass": "^4.0.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.10",

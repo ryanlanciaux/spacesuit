@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/link",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/link.js",
   "umd:main": "dist/link.umd.js",
   "module": "dist/link.m.js",
@@ -48,6 +48,5 @@
   "peerDependencies": {
     "react": "^16.8.0",
     "rebass": "^4.0.2"
-  },
-  "dependencies": {}
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/flex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/flex.js",
   "umd:main": "dist/flex.umd.js",
   "module": "dist/flex.m.js",
@@ -48,6 +48,5 @@
   "peerDependencies": {
     "react": "^16.8.0",
     "rebass": "^4.0.2"
-  },
-  "dependencies": {}
+  }
 }

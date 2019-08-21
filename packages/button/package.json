@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/button.js",
   "umd:main": "dist/button.umd.js",
   "module": "dist/button.m.js",
@@ -48,6 +48,5 @@
   "peerDependencies": {
     "react": "^16.8.0",
     "rebass": "^4.0.2"
-  },
-  "dependencies": {}
+  }
 }

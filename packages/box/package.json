@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/box",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/box.js",
   "umd:main": "dist/box.umd.js",
   "module": "dist/box.m.js",
@@ -46,10 +46,9 @@
     "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "rebass": "^4.0.2",
     "@emotion/core": "^10.0.16",
-    "@emotion/styled": "^10.0.15"
-  },
-  "dependencies": {}
+    "@emotion/styled": "^10.0.15",
+    "react": "^16.8.0",
+    "rebass": "^4.0.2"
+  }
 }
