@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/footer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/footer.js",
   "umd:main": "dist/footer.umd.js",
   "module": "dist/footer.m.js",
