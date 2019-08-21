@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/link",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/link.js",
   "umd:main": "dist/link.umd.js",
   "module": "dist/link.m.js",

@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/spacesuit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/spacesuit.js",
   "umd:main": "dist/spacesuit.umd.js",
   "module": "dist/spacesuit.m.js",
@@ -50,13 +50,13 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.2",
-    "@spacesuit/button": "^0.0.2",
-    "@spacesuit/flex": "^0.0.2",
-    "@spacesuit/header": "^0.0.2",
-    "@spacesuit/heading": "^0.0.2",
-    "@spacesuit/link": "^0.0.2",
-    "@spacesuit/theming": "^0.0.2"
+    "@spacesuit/box": "^0.0.3",
+    "@spacesuit/button": "^0.0.3",
+    "@spacesuit/flex": "^0.0.3",
+    "@spacesuit/header": "^0.0.3",
+    "@spacesuit/heading": "^0.0.3",
+    "@spacesuit/link": "^0.0.3",
+    "@spacesuit/theming": "^0.0.3"
   },
   "publishConfig": {
     "access": "public"
