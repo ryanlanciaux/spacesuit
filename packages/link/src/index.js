@@ -1,1 +1,2 @@
-export { Link as default } from "rebass";
+import { Link } from "rebass";
+export default Link;

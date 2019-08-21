@@ -8,7 +8,7 @@ module.exports = {
     return `packages/stories/stories/${name}/${name}.stories.${extension}`;
   },
   afterModule: props => {
-    const file = editJsonFile(`${__dirname}/packages/stories/package.json`, {
+    const file = editJsonFile(`${__dirname}/packages/spacesuit/package.json`, {
       autosave: true
     });
 

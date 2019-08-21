@@ -18,13 +18,7 @@ storiesOf("Header", module).add("default", () => {
           <img src="https://fakeimg.pl/300x100/?text=SomeLogo" />
         </Flex>
         <Flex width={[1, 1 / 2]} justifyContent="space-between">
-          <Header.Nav>
-            <Header.NavItem href="#">One</Header.NavItem>
-            <Header.NavItem href="#">Two</Header.NavItem>
-            <Header.NavItem href="#">Three</Header.NavItem>
-            <Header.NavItem href="#">Four</Header.NavItem>
-            <Header.NavItem href="#">Five</Header.NavItem>
-          </Header.Nav>
+          <strong>Right side</strong>
         </Flex>
       </Flex>
     </Header>
