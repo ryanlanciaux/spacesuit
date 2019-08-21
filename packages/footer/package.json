@@ -1,9 +1,9 @@
 {
-  "name": "@spacesuit/header",
-  "version": "0.0.3",
-  "main": "dist/header.js",
-  "umd:main": "dist/header.umd.js",
-  "module": "dist/header.m.js",
+  "name": "@spacesuit/footer",
+  "version": "0.0.1",
+  "main": "dist/footer.js",
+  "umd:main": "dist/footer.umd.js",
+  "module": "dist/footer.m.js",
   "source": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -46,18 +46,10 @@
     "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.0.16",
-    "@emotion/styled": "^10.0.15",
     "react": "^16.8.0",
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.3",
-    "@spacesuit/link": "^0.0.3",
-    "@spacesuit/navlist": "^0.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "60f2615b57f4061d14ad077bddb1b59cbc8bf658"
+    "@spacesuit/box": "^0.0.3"
+  }
 }
