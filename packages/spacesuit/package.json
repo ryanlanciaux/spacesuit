@@ -56,7 +56,9 @@
     "@spacesuit/header": "^0.0.4",
     "@spacesuit/heading": "^0.0.3",
     "@spacesuit/link": "^0.0.4",
-    "@spacesuit/theming": "^0.0.3"
+    "@spacesuit/theming": "^0.0.3",
+    "@spacesuit/footer": "^0.0.3",
+    "@spacesuit/navlist": "^0.0.2"
   },
   "publishConfig": {
     "access": "public"
