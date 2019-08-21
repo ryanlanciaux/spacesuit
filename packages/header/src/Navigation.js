@@ -4,8 +4,8 @@ import { Link } from "rebass";
 import Flex from "@spacesuit/flex";
 import { jsx } from "@emotion/core";
 
-export function NavItem(props) {
-  return <Link {...props} variant="navLink" />;
+export function NavItem({ active, ...props }) {
+  return <Link {...props} variant={active ? "navLinkActive" : "navLink"} />;
 }
 
 export function Nav({ listProps, children, ...props }) {
