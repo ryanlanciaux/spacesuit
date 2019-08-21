@@ -46,12 +46,14 @@
     "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "@rebass/preset": "^4.0.2",
-    "rebass": "^4.0.2",
     "@emotion/core": "^10.0.16",
     "@emotion/styled": "^10.0.15",
-    "emotion-theming": "^10.0.14"
+    "@rebass/preset": "^4.0.2",
+    "emotion-theming": "^10.0.14",
+    "react": "^16.8.0",
+    "rebass": "^4.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "deepmerge": "^4.0.0"
+  }
 }
