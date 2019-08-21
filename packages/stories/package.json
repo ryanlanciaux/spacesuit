@@ -1,17 +1,17 @@
 {
   "name": "stories",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@emotion/babel-preset-css-prop": "^10.0.14",
-    "@spacesuit/spacesuit": "^0.0.3",
+    "@spacesuit/footer": "^0.0.2",
+    "@spacesuit/navlist": "^0.0.2",
+    "@spacesuit/spacesuit": "^0.0.4",
     "babel-plugin-emotion": "^10.0.16",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "@spacesuit/footer": "^0.0.1",
-    "@spacesuit/navlist": "^0.0.1"
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "dev": "start-storybook -p 6006",
