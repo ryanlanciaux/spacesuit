@@ -54,6 +54,7 @@
     "@spacesuit/button": "^0.0.1",
     "@spacesuit/flex": "^0.0.1",
     "@spacesuit/heading": "^0.0.1",
+    "@spacesuit/header": "^0.0.1",
     "@spacesuit/link": "^0.0.1",
     "@spacesuit/theming": "^0.0.1"
   }
