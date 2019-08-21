@@ -53,7 +53,7 @@
     "@spacesuit/box": "^0.0.3",
     "@spacesuit/button": "^0.0.3",
     "@spacesuit/flex": "^0.0.3",
-    "@spacesuit/footer": "^0.0.3",
+    "@spacesuit/footer": "^0.0.5",
     "@spacesuit/header": "^0.0.4",
     "@spacesuit/heading": "^0.0.3",
     "@spacesuit/link": "^0.0.4",
