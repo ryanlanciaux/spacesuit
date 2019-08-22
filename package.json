@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "yarn lerna run dev --parallel"
+    "start": "yarn lerna run dev --parallel",
+    "publish:packages": "yarn lerna run build && yarn lerna publish"
   },
   "devDependencies": {
     "@emotion/core": "^10.0.16",
