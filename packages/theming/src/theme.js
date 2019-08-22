@@ -7,7 +7,7 @@ const navLink = {
 
 export const theme = {
   fontSizes: [12, 14, 16, 24, 32, 48, 64],
-  fontFamily: "sans-serif",
+  fonts: ["sans-serif"],
   colors: {
     white: "#FFF",
     primary: "#07c",

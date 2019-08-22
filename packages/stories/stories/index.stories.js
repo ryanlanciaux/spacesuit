@@ -13,8 +13,11 @@ storiesOf("Welcome", module).add("to Storybook", () => (
 
 storiesOf("Button", module)
   .add("with text", () => (
-    <Button variant="outline" color="primary">
-      CLICK ME
-    </Button>
+    <>
+      <Button variant="outline" color="primary">
+        Standard
+      </Button>
+      <Button uppercase>with upperCase prop</Button>
+    </>
   ))
   .add("Without theme", () => <Button color="primary">Click</Button>);
