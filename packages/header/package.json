@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/header",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/header.js",
   "umd:main": "dist/header.umd.js",
   "module": "dist/header.m.js",
@@ -52,9 +52,9 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.3",
+    "@spacesuit/box": "^0.0.4",
     "@spacesuit/link": "^0.0.4",
-    "@spacesuit/navlist": "^0.0.2"
+    "@spacesuit/navlist": "^0.0.3"
   },
   "publishConfig": {
     "access": "public"
