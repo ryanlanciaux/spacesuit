@@ -49,6 +49,9 @@
     "react": "^16.8.0",
     "rebass": "^4.0.2"
   },
+  "dependencies": {
+    "@spacesuit/box": "^0.0.4"
+  },
   "publishConfig": {
     "access": "public"
   },
