@@ -8,3 +8,5 @@ export { ThemeProvider, theme } from "@spacesuit/theming";
 export { default as Footer } from "@spacesuit/footer";
 export { Nav as NavList, NavItem as NavListItem } from "@spacesuit/navlist";
 export { default as Text } from "@spacesuit/text";
+
+export * from "@spacesuit/form";
