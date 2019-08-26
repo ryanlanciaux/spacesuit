@@ -51,6 +51,10 @@
   },
   "dependencies": {
     "formik": "^1.5.8",
-    "yup": "^0.27.0"
+    "yup": "^0.27.0",
+    "@spacesuit/flex": "^0.0.1",
+    "@spacesuit/box": "^0.0.1",
+    "@spacesuit/button": "^0.0.1",
+    "@spacesuit/text": "^0.0.1"
   }
 }

@@ -13,7 +13,8 @@ export const theme = {
     primary: "#07c",
     active: "#47FF54",
     gray: "#f6f6ff",
-    navLink: "primary"
+    navLink: "primary",
+    error: "#F00"
   },
   space: [0, 4, 8, 16, 32, 64],
   variants: {
@@ -21,6 +22,9 @@ export const theme = {
     navLinkActive: {
       ...navLink,
       color: "active"
+    },
+    labelField: {
+      fontSize: "5"
     }
   },
   buttons: {
