@@ -5,7 +5,7 @@ import { jsx } from "@emotion/core";
 import { Select } from "./select";
 import { Input } from "./input";
 import { RadioGroup, RadioOption } from "./radio";
-import { CheckboxGroup, Checkbox } from "./checkbox";
+import { CheckboxGroup, Checkbox, CheckboxField } from "./checkbox";
 
 const FormContext = React.createContext();
 

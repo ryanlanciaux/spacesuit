@@ -19,7 +19,10 @@ import {
 const TestSchema = Yup.object().shape({
   select: Yup.string().required("Please make a selection"),
   firstThing: Yup.string().required("First thing is a required field"),
-  secondThing: Yup.number("This must be a number").typeError("Must be a number")
+  secondThing: Yup.number("This must be a number").typeError(
+    "Must be a number"
+  ),
+  agreeToTerms: Yup.boolean().oneOf([true], "Must agree to terms")
 });
 
 storiesOf("form", module).add("default", () => {
@@ -30,7 +33,8 @@ storiesOf("form", module).add("default", () => {
         select: "one",
         firstThing: "",
         favoriteMovie: "",
-        otherMovie: []
+        otherMovie: [],
+        agreeToTerms: false
       }}
       onSubmit={values => {
         action("SUBMIT")(values);
@@ -42,26 +46,37 @@ storiesOf("form", module).add("default", () => {
         <option value="two">two</option>
       </Select>
       <Input name="secondThing" labelText="Second thing" />
-      <RadioGroup description="Favorite Movie">
-        <RadioOption fieldName="favoriteMovie" id="a_new_hope">
+      <RadioGroup description="Favorite Movie" showFieldset="false">
+        <RadioOption name="favoriteMovie" id="a_new_hope">
           Star Wars IV
         </RadioOption>
-        <RadioOption fieldName="favoriteMovie" id="the_empire_strikes_back">
+        <RadioOption name="favoriteMovie" id="the_empire_strikes_back">
           Star Wars V
         </RadioOption>
-        <RadioOption fieldName="favoriteMovie" id="return_of_the_jedi">
+        <RadioOption name="favoriteMovie" id="return_of_the_jedi">
           Star Wars VI
         </RadioOption>
       </RadioGroup>
-      <CheckboxGroup>
-        <Checkbox fieldName="otherMovie" id="one">
+      <CheckboxGroup name="otherMovie" description="Other movies">
+        <Checkbox name="otherMovie" id="other_a_new_hope">
           Star Wars IV
         </Checkbox>
-        <Checkbox fieldName="otherMovie" id="two">
+        <Checkbox name="otherMovie" id="other_empire">
           Star Wars V
         </Checkbox>
-        <Checkbox fieldName="otherMovie" id="three">
+        <Checkbox name="otherMovie" id="other_return_of_the_jedi">
           Star Wars VI
+        </Checkbox>
+      </CheckboxGroup>
+      <Input
+        name="comments"
+        labelText="Comments"
+        type="textarea"
+        inputProps={{ rows: 7, cols: 50 }}
+      />
+      <CheckboxGroup name="agreeToTerms">
+        <Checkbox name="agreeToTerms" id="agreeToTerms">
+          Agree to terms and conditions
         </Checkbox>
       </CheckboxGroup>
       <Button>SUBMIT</Button>

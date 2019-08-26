@@ -5,7 +5,7 @@ import Box from "@spacesuit/box";
 import Flex from "@spacesuit/flex";
 import Text from "@spacesuit/text";
 
-export function Input({ field, name, labelText, ...props }) {
+export function Input({ field, name, labelText, type, inputProps, ...props }) {
   return (
     <Field name={name}>
       {({ field, form }) => {
@@ -21,7 +21,14 @@ export function Input({ field, name, labelText, ...props }) {
             <Text as="label" htmlFor={name} {...props} {...props.labelProps}>
               {labelText}
             </Text>
-            <Box as="input" type="text" fontSize="3" {...field} {...props} />
+            <Box
+              as={type}
+              type="text"
+              fontSize="3"
+              {...field}
+              {...inputProps}
+              {...props}
+            />
             {errors[name] && touched[name] ? (
               <Text color="error" mt="1" {...props} {...props.errorTextProps}>
                 {errors[name]}
@@ -35,8 +42,10 @@ export function Input({ field, name, labelText, ...props }) {
 }
 
 Input.defaultProps = {
+  type: "input",
   labelProps: {
-    mb: "2"
+    mb: "2",
+    fontSize: "3"
   },
   errorTextProps: {
     fontSize: "2"

@@ -9,7 +9,7 @@ import Text from "@spacesuit/text";
 export function RadioOption({
   id,
   children: text,
-  fieldName,
+  name,
   labelProps,
   inputProps,
   onChange,
@@ -22,7 +22,7 @@ export function RadioOption({
         onChange={onChange}
         id={id}
         type="radio"
-        name={fieldName}
+        name={name}
         value={id}
         {...inputProps}
       />

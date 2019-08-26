@@ -52,21 +52,30 @@ export function CheckboxGroup({
   description,
   fieldsetProps,
   containerProps,
+  showFieldset,
   ...props
 }) {
   return (
     <FieldArray name={name}>
       {({ push, remove, form }) => {
         const { errors, touched, values } = form;
+        const isArray = children.length >= 1;
 
         return (
           <Flex flexDirection="column" my="3" {...props} {...containerProps}>
-            <Box as="fieldset" {...props} {...fieldsetProps}>
-              <legend>{description}</legend>
+            <Box
+              as={isArray && showFieldset ? "fieldset" : "div"}
+              {...props}
+              {...fieldsetProps}
+            >
+              {isArray && <legend>{description}</legend>}
               {Children.map(children, child => {
                 return cloneElement(child, {
                   onChange: e => {
-                    debugger;
+                    if (!isArray) {
+                      values[name] = e.target.checked;
+                      return;
+                    }
                     if (e.target.checked) {
                       push(child.props.id);
                     } else {
@@ -90,6 +99,7 @@ export function CheckboxGroup({
 }
 
 CheckboxGroup.defaultProps = {
+  showFieldset: true,
   fieldsetProps: {
     mb: "2",
     fontSize: "3"
