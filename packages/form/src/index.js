@@ -1,27 +1,38 @@
 /** @jsx jsx */
-import React, { useContext } from "react";
+import React, { useContext, Fragment } from "react";
 import { Formik } from "formik";
 import { jsx } from "@emotion/core";
 import { Select } from "./select";
 import { Input } from "./input";
 import { RadioGroup, RadioOption } from "./radio";
 import { CheckboxGroup, Checkbox, CheckboxField } from "./checkbox";
-
+import { ErrorSummary } from "./errorSummary";
 const FormContext = React.createContext();
 
 export function useFormProps() {
   return useContext(FormContext);
 }
 
-export function Form({ children, ...props }) {
+export function Form({
+  children,
+  errorSummaryProps,
+  summaryHeading,
+  ...props
+}) {
   return (
     <Formik {...props}>
       {renderProps => (
-        <form onSubmit={renderProps.handleSubmit}>
-          <FormContext.Provider value={renderProps}>
-            {children}
-          </FormContext.Provider>
-        </form>
+        <Fragment>
+          <ErrorSummary
+            {...errorSummaryProps}
+            summaryHeading={summaryHeading}
+          />
+          <form onSubmit={renderProps.handleSubmit}>
+            <FormContext.Provider value={renderProps}>
+              {children}
+            </FormContext.Provider>
+          </form>
+        </Fragment>
       )}
     </Formik>
   );
