@@ -11,7 +11,9 @@ import {
   Button,
   Input,
   RadioGroup,
-  RadioOption
+  RadioOption,
+  Checkbox,
+  CheckboxGroup
 } from "@spacesuit/spacesuit";
 
 const TestSchema = Yup.object().shape({
@@ -24,7 +26,12 @@ storiesOf("form", module).add("default", () => {
   return (
     <Form
       validationSchema={TestSchema}
-      initialValues={{ select: "one", firstThing: "", favoriteMovie: "" }}
+      initialValues={{
+        select: "one",
+        firstThing: "",
+        favoriteMovie: "",
+        otherMovie: []
+      }}
       onSubmit={values => {
         action("SUBMIT")(values);
       }}
@@ -46,6 +53,17 @@ storiesOf("form", module).add("default", () => {
           Star Wars VI
         </RadioOption>
       </RadioGroup>
+      <CheckboxGroup>
+        <Checkbox fieldName="otherMovie" id="one">
+          Star Wars IV
+        </Checkbox>
+        <Checkbox fieldName="otherMovie" id="two">
+          Star Wars V
+        </Checkbox>
+        <Checkbox fieldName="otherMovie" id="three">
+          Star Wars VI
+        </Checkbox>
+      </CheckboxGroup>
       <Button>SUBMIT</Button>
     </Form>
   );

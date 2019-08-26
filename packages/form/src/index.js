@@ -5,6 +5,8 @@ import { jsx } from "@emotion/core";
 import { Select } from "./select";
 import { Input } from "./input";
 import { RadioGroup, RadioOption } from "./radio";
+import { CheckboxGroup, Checkbox } from "./checkbox";
+
 const FormContext = React.createContext();
 
 export function useFormProps() {
@@ -25,4 +27,4 @@ export function Form({ children, ...props }) {
   );
 }
 
-export { Input, Select, RadioGroup, RadioOption };
+export { Input, Select, RadioGroup, RadioOption, Checkbox, CheckboxGroup };
