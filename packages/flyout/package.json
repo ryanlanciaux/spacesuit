@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/flyout",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/flyout.js",
   "umd:main": "dist/flyout.umd.js",
   "module": "dist/flyout.m.js",
