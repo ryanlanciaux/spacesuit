@@ -9,10 +9,12 @@ const getLevelString = level => {
   return `h${level}`;
 };
 
-export default function Heading({ level, children, ...props }) {
+export default function Heading({ level, children, uppercase, ...props }) {
   return (
     <BassHeading as={getLevelString(level)} {...props}>
-      {children}
+      {uppercase && typeof children === "string"
+        ? children.toUpperCase()
+        : children}
     </BassHeading>
   );
 }

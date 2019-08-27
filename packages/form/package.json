@@ -1,9 +1,9 @@
 {
-  "name": "@spacesuit/spacesuit",
-  "version": "0.0.9",
-  "main": "dist/spacesuit.js",
-  "umd:main": "dist/spacesuit.umd.js",
-  "module": "dist/spacesuit.m.js",
+  "name": "@spacesuit/form",
+  "version": "0.0.1",
+  "main": "dist/form.js",
+  "umd:main": "dist/form.umd.js",
+  "module": "dist/form.m.js",
   "source": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -50,20 +50,11 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.4",
-    "@spacesuit/button": "^0.0.4",
-    "@spacesuit/flex": "^0.0.4",
-    "@spacesuit/footer": "^0.0.6",
-    "@spacesuit/header": "^0.0.5",
-    "@spacesuit/heading": "^0.0.3",
-    "@spacesuit/link": "^0.0.4",
-    "@spacesuit/navlist": "^0.0.3",
-    "@spacesuit/text": "^0.0.2",
-    "@spacesuit/theming": "^0.0.4",
-    "@spacesuit/form": "^0.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "60f2615b57f4061d14ad077bddb1b59cbc8bf658"
+    "formik": "^1.5.8",
+    "yup": "^0.27.0",
+    "@spacesuit/flex": "^0.0.1",
+    "@spacesuit/box": "^0.0.1",
+    "@spacesuit/button": "^0.0.1",
+    "@spacesuit/text": "^0.0.1"
+  }
 }
