@@ -316,7 +316,6 @@ class InnerMenu extends React.Component {
   };
 
   onTransitionEnd = e => {
-    console.log("HELLO!");
     const { onClose } = this.props;
     if (e.propertyName === "opacity") {
       const style = getComputedStyle(this.menu.current);

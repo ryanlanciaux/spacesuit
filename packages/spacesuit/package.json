@@ -60,7 +60,8 @@
     "@spacesuit/link": "^0.0.4",
     "@spacesuit/navlist": "^0.0.4",
     "@spacesuit/text": "^0.0.2",
-    "@spacesuit/theming": "^0.0.5"
+    "@spacesuit/theming": "^0.0.5",
+    "@spacesuit/modal": "^0.0.1"
   },
   "publishConfig": {
     "access": "public"

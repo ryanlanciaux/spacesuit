@@ -13,6 +13,7 @@ export const theme = {
     primary: "#07c",
     active: "#47FF54",
     gray: "#f6f6ff",
+    borderGray: "#777",
     grayMid: "#EDEDED",
     navLink: "primary",
     error: "#F00"
