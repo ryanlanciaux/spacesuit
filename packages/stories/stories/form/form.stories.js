@@ -2,6 +2,7 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
+import { css } from "@emotion/core";
 import { linkTo } from "@storybook/addon-links";
 import { select } from "@storybook/addon-knobs";
 import * as Yup from "yup";
@@ -36,6 +37,16 @@ storiesOf("form", module).add("default", () => {
         otherMovie: [],
         agreeToTerms: false
       }}
+      errorSummaryProps={{
+        css: css`
+          a:hover {
+            color: #badbad;
+          }
+        `
+      }}
+      errorSummaryHeading={
+        <h1 style={{ margin: 0 }}>There were a couple of issues</h1>
+      }
       onSubmit={values => {
         action("SUBMIT")(values);
       }}

@@ -16,7 +16,7 @@ export function useFormProps() {
 export function Form({
   children,
   errorSummaryProps,
-  summaryHeading,
+  errorSummaryHeading,
   ...props
 }) {
   return (
@@ -25,7 +25,8 @@ export function Form({
         <Fragment>
           <ErrorSummary
             {...errorSummaryProps}
-            summaryHeading={summaryHeading}
+            errors={renderProps.errors}
+            summaryHeading={errorSummaryHeading}
           />
           <form onSubmit={renderProps.handleSubmit}>
             <FormContext.Provider value={renderProps}>

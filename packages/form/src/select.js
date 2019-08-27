@@ -10,7 +10,6 @@ export function Select({ field, name, labelText, ...props }) {
     <Field name={name}>
       {({ field, form }) => {
         const { errors, touched } = form;
-        console.log("ERRORS", errors, touched, name);
         return (
           <Flex
             flexDirection="column"
