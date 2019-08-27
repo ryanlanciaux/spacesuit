@@ -17,17 +17,20 @@ export function Form({
   children,
   errorSummaryProps,
   errorSummaryHeading,
+  showErrorSummary = true,
   ...props
 }) {
   return (
     <Formik {...props}>
       {renderProps => (
         <Fragment>
-          <ErrorSummary
-            {...errorSummaryProps}
-            errors={renderProps.errors}
-            summaryHeading={errorSummaryHeading}
-          />
+          {showErrorSummary && (
+            <ErrorSummary
+              {...errorSummaryProps}
+              errors={renderProps.errors}
+              summaryHeading={errorSummaryHeading}
+            />
+          )}
           <form onSubmit={renderProps.handleSubmit}>
             <FormContext.Provider value={renderProps}>
               {children}
