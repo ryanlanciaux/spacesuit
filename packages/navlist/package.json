@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/navlist",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/navlist.js",
   "umd:main": "dist/navlist.umd.js",
   "module": "dist/navlist.m.js",
@@ -51,7 +51,7 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/flex": "^0.0.4",
+    "@spacesuit/flex": "^0.0.5",
     "@spacesuit/link": "^0.0.4"
   },
   "publishConfig": {

@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/flex",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/flex.js",
   "umd:main": "dist/flex.umd.js",
   "module": "dist/flex.m.js",
@@ -50,7 +50,7 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.4"
+    "@spacesuit/box": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

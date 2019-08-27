@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/form",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/form.js",
   "umd:main": "dist/form.umd.js",
   "module": "dist/form.m.js",
@@ -50,11 +50,11 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "formik": "^1.5.8",
-    "yup": "^0.27.0",
-    "@spacesuit/flex": "^0.0.1",
     "@spacesuit/box": "^0.0.1",
     "@spacesuit/button": "^0.0.1",
-    "@spacesuit/text": "^0.0.1"
+    "@spacesuit/flex": "^0.0.1",
+    "@spacesuit/text": "^0.0.1",
+    "formik": "^1.5.8",
+    "yup": "^0.27.0"
   }
 }

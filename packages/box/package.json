@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/box",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/box.js",
   "umd:main": "dist/box.umd.js",
   "module": "dist/box.m.js",

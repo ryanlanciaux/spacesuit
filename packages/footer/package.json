@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/footer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/footer.js",
   "umd:main": "dist/footer.umd.js",
   "module": "dist/footer.m.js",
@@ -50,7 +50,7 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.4"
+    "@spacesuit/box": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"
