@@ -1,9 +1,9 @@
 {
-  "name": "@spacesuit/form",
-  "version": "0.0.2",
-  "main": "dist/form.js",
-  "umd:main": "dist/form.umd.js",
-  "module": "dist/form.m.js",
+  "name": "@spacesuit/modal",
+  "version": "0.0.1",
+  "main": "dist/modal.js",
+  "umd:main": "dist/modal.umd.js",
+  "module": "dist/modal.m.js",
   "source": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -50,14 +50,6 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.5",
-    "@spacesuit/button": "^0.0.4",
-    "@spacesuit/flex": "^0.0.5",
-    "@spacesuit/text": "^0.0.2",
-    "formik": "^1.5.8",
-    "yup": "^0.27.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "@reach/dialog": "^0.2.9"
   }
 }
