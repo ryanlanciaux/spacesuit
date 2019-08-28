@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/form",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/form.js",
   "umd:main": "dist/form.umd.js",
   "module": "dist/form.m.js",
