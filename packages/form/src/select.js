@@ -3,7 +3,6 @@ import { jsx } from "@emotion/core";
 import { Field } from "formik";
 import Box from "@spacesuit/box";
 import Flex from "@spacesuit/flex";
-import Text from "@spacesuit/text";
 
 export function Select({ field, name, labelText, ...props }) {
   return (
@@ -17,14 +16,20 @@ export function Select({ field, name, labelText, ...props }) {
             {...props}
             {...props.containerProps}
           >
-            <Text as="label" htmlFor={name} {...props} {...props.labelProps}>
+            <Box
+              as="label"
+              variant="label"
+              htmlFor={name}
+              {...props}
+              {...props.labelProps}
+            >
               {labelText}
-            </Text>
-            <Box as="select" fontSize="3" {...field} {...props} />
+            </Box>
+            <Box as="select" variant="select" {...field} {...props} />
             {errors[name] && touched[name] ? (
-              <Text color="error" mt="1" {...props} {...props.errorTextProps}>
+              <Box variant="error" {...props} {...props.errorTextProps}>
                 {errors[name]}
-              </Text>
+              </Box>
             ) : null}
           </Flex>
         );
@@ -33,11 +38,4 @@ export function Select({ field, name, labelText, ...props }) {
   );
 }
 
-Select.defaultProps = {
-  labelProps: {
-    mb: "2"
-  },
-  errorTextProps: {
-    fontSize: "2"
-  }
-};
+Select.defaultProps = {};

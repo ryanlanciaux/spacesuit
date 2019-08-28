@@ -14,7 +14,8 @@ import {
   RadioGroup,
   RadioOption,
   Checkbox,
-  CheckboxGroup
+  CheckboxGroup,
+  useFormProps
 } from "@spacesuit/spacesuit";
 
 const TestSchema = Yup.object().shape({
@@ -26,6 +27,11 @@ const TestSchema = Yup.object().shape({
   agreeToTerms: Yup.boolean().oneOf([true], "Must agree to terms")
 });
 
+function Blah() {
+  const { values } = useFormProps();
+  console.log("VALUES", values);
+  return null;
+}
 storiesOf("form", module).add("default", () => {
   return (
     <Form
@@ -51,12 +57,13 @@ storiesOf("form", module).add("default", () => {
         action("SUBMIT")(values);
       }}
     >
+      <Blah />
       <Input name="firstThing" labelText="First thing" />
       <Select name="select" labelText="Works?" value="Please select one">
         <option value="one">One</option>
         <option value="two">two</option>
       </Select>
-      <Input name="secondThing" labelText="Second thing" />
+      <Input name="secondThing" labelText="Number password" type="password" />
       <RadioGroup description="Favorite Movie" showFieldset="false">
         <RadioOption name="favoriteMovie" id="a_new_hope">
           Star Wars IV
@@ -82,7 +89,7 @@ storiesOf("form", module).add("default", () => {
       <Input
         name="comments"
         labelText="Comments"
-        type="textarea"
+        as="textarea"
         inputProps={{ rows: 7, cols: 50 }}
       />
       <CheckboxGroup name="agreeToTerms">

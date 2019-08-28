@@ -61,16 +61,16 @@ export function RadioGroup({
 
         return (
           <Flex flexDirection="column" my="3" {...props} {...containerProps}>
-            <Box as="fieldset" {...props} {...fieldsetProps}>
+            <Box as="fieldset" variant="fieldset" {...props} {...fieldsetProps}>
               <legend>{description}</legend>
               {React.Children.map(children, child => {
                 return React.cloneElement(child, { onChange: handleChange });
               })}
             </Box>
             {errors[name] && touched[name] ? (
-              <Text color="error" mt="1" {...props} {...props.errorTextProps}>
+              <Box variant="error" {...props} {...props.errorTextProps}>
                 {errors[name]}
-              </Text>
+              </Box>
             ) : null}
           </Flex>
         );
@@ -79,12 +79,4 @@ export function RadioGroup({
   );
 }
 
-RadioGroup.defaultProps = {
-  fieldsetProps: {
-    mb: "2",
-    fontSize: "3"
-  },
-  errorTextProps: {
-    fontSize: "2"
-  }
-};
+RadioGroup.defaultProps = {};

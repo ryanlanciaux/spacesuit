@@ -16,17 +16,18 @@ export function Checkbox({
   ...props
 }) {
   return (
-    <Flex {...props}>
+    <Flex {...props} variant="checkboxContainer">
       <Box
         as="input"
         onChange={onChange}
         id={id}
         type="checkbox"
+        variant="checkbox"
         name={fieldName}
         value={id}
         {...inputProps}
       />
-      <Box as="label" htmlFor={id} {...labelProps}>
+      <Box as="label" variant="label" htmlFor={id} {...labelProps}>
         {text}
       </Box>
     </Flex>
@@ -34,14 +35,11 @@ export function Checkbox({
 }
 
 Checkbox.defaultProps = {
-  mb: "1",
-  flexDirection: "row",
-  alignItems: "center",
   labelProps: {
     ml: "2"
   },
   inputProps: {
-    fontSize: "6"
+    fontSize: 40
   }
 };
 
@@ -62,34 +60,35 @@ export function CheckboxGroup({
         const isArray = children.length >= 1;
 
         return (
-          <Flex flexDirection="column" my="3" {...props} {...containerProps}>
-            <Box
-              as={isArray && showFieldset ? "fieldset" : "div"}
-              {...props}
-              {...fieldsetProps}
-            >
-              {isArray && <legend>{description}</legend>}
-              {Children.map(children, child => {
-                return cloneElement(child, {
-                  onChange: e => {
-                    if (!isArray) {
-                      values[name] = e.target.checked;
-                      return;
-                    }
-                    if (e.target.checked) {
-                      push(child.props.id);
-                    } else {
-                      const idx = values[name].indexOf(child.props.id);
-                      remove(idx);
-                    }
+          <Flex
+            flexDirection="column"
+            my="3"
+            variant="checkboxGroup"
+            {...props}
+            {...containerProps}
+            as={isArray && showFieldset ? "fieldset" : "div"}
+          >
+            {isArray && <legend>{description}</legend>}
+            {Children.map(children, child => {
+              return cloneElement(child, {
+                onChange: e => {
+                  if (!isArray) {
+                    values[name] = e.target.checked;
+                    return;
                   }
-                });
-              })}
-            </Box>
+                  if (e.target.checked) {
+                    push(child.props.id);
+                  } else {
+                    const idx = values[name].indexOf(child.props.id);
+                    remove(idx);
+                  }
+                }
+              });
+            })}
             {errors[name] && touched[name] ? (
-              <Text color="error" mt="1" {...props} {...props.errorTextProps}>
+              <Box variant="error" {...props.errorTextProps}>
                 {errors[name]}
-              </Text>
+              </Box>
             ) : null}
           </Flex>
         );
@@ -100,10 +99,6 @@ export function CheckboxGroup({
 
 CheckboxGroup.defaultProps = {
   showFieldset: true,
-  fieldsetProps: {
-    mb: "2",
-    fontSize: "3"
-  },
   errorTextProps: {
     fontSize: "2"
   }

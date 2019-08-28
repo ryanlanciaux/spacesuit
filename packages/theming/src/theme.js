@@ -26,9 +26,42 @@ export const theme = {
       color: "active"
     },
     labelField: {
-      fontSize: "5"
+      fontSize: 300
+    },
+    fieldset: {
+      mb: "2",
+      fontSize: "3"
+    },
+    select: {
+      fontSize: "3"
+    },
+    input: {
+      fontSize: "3"
+    },
+    checkboxGroup: {
+      mb: "2",
+      fontSize: "3"
+    },
+    checkboxContainer: {
+      flexDirection: "row",
+      alignItems: "center"
+    },
+    checkbox: {
+      zoom: 1.75
+    },
+    label: {
+      fontSize: "3",
+      fontFamily: "sans-serif",
+      mb: "2"
+    },
+    error: {
+      fontSize: "2",
+      mt: "1",
+      fontFamily: "sans-serif",
+      color: "error"
     }
   },
+  text: {},
   buttons: {
     primary: {
       color: "white",

@@ -3,9 +3,16 @@ import { jsx } from "@emotion/core";
 import { Field } from "formik";
 import Box from "@spacesuit/box";
 import Flex from "@spacesuit/flex";
-import Text from "@spacesuit/text";
 
-export function Input({ field, name, labelText, type, inputProps, ...props }) {
+export function Input({
+  field,
+  name,
+  labelText,
+  as,
+  type,
+  inputProps,
+  ...props
+}) {
   return (
     <Field name={name}>
       {({ field, form }) => {
@@ -18,21 +25,27 @@ export function Input({ field, name, labelText, type, inputProps, ...props }) {
             {...props}
             {...props.containerProps}
           >
-            <Text as="label" htmlFor={name} {...props} {...props.labelProps}>
-              {labelText}
-            </Text>
             <Box
-              as={type}
-              type="text"
-              fontSize="3"
+              as="label"
+              variant="label"
+              htmlFor={name}
+              {...props}
+              {...props.labelProps}
+            >
+              {labelText}
+            </Box>
+            <Box
+              as={as}
+              type={type}
+              variant="input"
               {...field}
               {...inputProps}
               {...props}
             />
             {errors[name] && touched[name] ? (
-              <Text color="error" mt="1" {...props} {...props.errorTextProps}>
+              <Box variant="error" {...props} {...props.errorTextProps}>
                 {errors[name]}
-              </Text>
+              </Box>
             ) : null}
           </Flex>
         );
@@ -42,12 +55,5 @@ export function Input({ field, name, labelText, type, inputProps, ...props }) {
 }
 
 Input.defaultProps = {
-  type: "input",
-  labelProps: {
-    mb: "2",
-    fontSize: "3"
-  },
-  errorTextProps: {
-    fontSize: "2"
-  }
+  as: "input"
 };

@@ -11,7 +11,7 @@ export function ErrorSummary({ errors, summaryHeading, ...props }) {
 
       <Box as="ul" m="0" px="3">
         {Object.keys(errors).map(key => (
-          <Box as="li" p7="1">
+          <Box as="li" p7="1" key={key}>
             <a href={`#${key}`}>{errors[key]}</a>
           </Box>
         ))}

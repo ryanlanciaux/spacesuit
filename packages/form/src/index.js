@@ -22,22 +22,26 @@ export function Form({
 }) {
   return (
     <Formik {...props}>
-      {renderProps => (
-        <Fragment>
-          {showErrorSummary && (
-            <ErrorSummary
-              {...errorSummaryProps}
-              errors={renderProps.errors}
-              summaryHeading={errorSummaryHeading}
-            />
-          )}
-          <form onSubmit={renderProps.handleSubmit}>
-            <FormContext.Provider value={renderProps}>
-              {children}
-            </FormContext.Provider>
-          </form>
-        </Fragment>
-      )}
+      {renderProps => {
+        const { submitCount } = renderProps;
+
+        return (
+          <Fragment>
+            {submitCount > 0 && showErrorSummary && (
+              <ErrorSummary
+                {...errorSummaryProps}
+                errors={renderProps.errors}
+                summaryHeading={errorSummaryHeading}
+              />
+            )}
+            <form onSubmit={renderProps.handleSubmit}>
+              <FormContext.Provider value={renderProps}>
+                {children}
+              </FormContext.Provider>
+            </form>
+          </Fragment>
+        );
+      }}
     </Formik>
   );
 }
