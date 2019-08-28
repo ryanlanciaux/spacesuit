@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/modal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/modal.js",
   "umd:main": "dist/modal.umd.js",
   "module": "dist/modal.m.js",
