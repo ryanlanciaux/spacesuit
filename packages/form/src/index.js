@@ -36,7 +36,9 @@ export function Form({
             )}
             <form onSubmit={renderProps.handleSubmit}>
               <FormContext.Provider value={renderProps}>
-                {children}
+                {typeof children === "function"
+                  ? children(renderProps)
+                  : children}
               </FormContext.Provider>
             </form>
           </Fragment>
