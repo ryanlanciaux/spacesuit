@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/carousel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/carousel.js",
   "umd:main": "dist/carousel.umd.js",
   "module": "dist/carousel.m.js",
@@ -51,6 +51,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {}
+  }
 }
