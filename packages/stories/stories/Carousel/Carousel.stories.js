@@ -34,20 +34,36 @@ const Previous = onNext => (
 );
 
 const Example = () => (
-  <div style={{ margin: 30, width: 400, height: 400 }}>
+  <div style={{ margin: 30, width: 400, height: 400, position: "relative" }}>
     <Carousel
       height="400px"
       width="400px"
       next={Next}
       previous={Previous}
-      controlsStyle={{ bottom: -40 }}
+      autoScroll={true}
+      controlsStyle={{ bottom: 40, width: "100%" }}
     >
       <ImageContent
         imgSrc="http://www.placecage.com/300/300"
         caption="Nicolas Cage @ 300x300"
         description="First Nicolas Cage image"
         descriptionId="first"
-      />
+      >
+        <div
+          style={{
+            display: "flex",
+            backgroundColor: "rgba(255, 120, 0, .20)",
+            flexGrow: "1",
+            height: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column"
+          }}
+        >
+          <h1>This is a test</h1>
+          <button onClick={() => alert("It works.")}>Click this</button>
+        </div>
+      </ImageContent>
       <ImageContent
         imgSrc="http://www.fillmurray.com/300/300"
         caption="Bill Murray @ 300x300"

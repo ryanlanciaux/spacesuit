@@ -85,6 +85,7 @@ const GalleryList = styled.ul`
 const GalleryListItem = styled.li`
   list-style: none;
   margin: 0;
+  position: relative;
   flex: 0 0 100%;
 `;
 
@@ -114,11 +115,19 @@ export const CarouselImageContent = ({
   caption,
   description,
   descriptionId,
+  children,
   showCaption = false
 }) => (
   <GalleryListItem>
     <Figure>
       <Image src={imgSrc} aria-describedby={descriptionId} alt={caption} />
+      {children && (
+        <div
+          style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
+        >
+          {children}
+        </div>
+      )}
       <Caption>
         {showCaption && { caption }}
         <Definition id={descriptionId}>{description}</Definition>
