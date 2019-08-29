@@ -6,7 +6,7 @@ import {
   Carousel,
   CarouselImageContent as ImageContent,
   CarouselControls
-} from "@spacesuit/spacesuit";
+} from "@spacesuit/carousel";
 
 import styled from "@emotion/styled";
 

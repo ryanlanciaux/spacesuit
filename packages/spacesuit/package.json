@@ -61,8 +61,7 @@
     "@spacesuit/modal": "^0.0.3",
     "@spacesuit/navlist": "^0.0.4",
     "@spacesuit/text": "^0.0.2",
-    "@spacesuit/theming": "^0.0.7",
-    "@spacesuit/carousel": "^0.0.1"
+    "@spacesuit/theming": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"

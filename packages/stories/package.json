@@ -8,6 +8,7 @@
     "@spacesuit/footer": "^0.0.3",
     "@spacesuit/navlist": "^0.0.4",
     "@spacesuit/spacesuit": "^0.0.13",
+    "@spacesuit/carousel": "^0.0.1",
     "babel-plugin-emotion": "^10.0.16",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
