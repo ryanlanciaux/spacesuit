@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@spacesuit/flex": "^0.0.5",
+    "@spacesuit/box": "^0.0.5",
     "@spacesuit/link": "^0.0.4"
   },
   "publishConfig": {
