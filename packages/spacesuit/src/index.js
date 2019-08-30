@@ -11,6 +11,3 @@ export { default as Text } from "@spacesuit/text";
 export { default as Modal } from "@spacesuit/modal";
 
 export * from "@spacesuit/form";
-
-// TODO: We probably don't actually want to include this in spacesuit
-export * from "@spacesuit/carousel";
