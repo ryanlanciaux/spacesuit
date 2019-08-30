@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/spacesuit",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "main": "dist/spacesuit.js",
   "umd:main": "dist/spacesuit.umd.js",
   "module": "dist/spacesuit.m.js",
