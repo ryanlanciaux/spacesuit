@@ -1,14 +1,14 @@
 {
   "name": "stories",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@emotion/babel-preset-css-prop": "^10.0.14",
     "@spacesuit/carousel": "^0.0.2",
     "@spacesuit/footer": "^0.0.3",
-    "@spacesuit/navlist": "^0.0.4",
-    "@spacesuit/spacesuit": "^0.0.14",
+    "@spacesuit/navlist": "^0.0.5",
+    "@spacesuit/spacesuit": "^0.0.15",
     "babel-plugin-emotion": "^10.0.16",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
