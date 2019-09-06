@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "yarn lerna run dev --parallel",
-    "publish:packages": "yarn lerna run build && yarn lerna publish"
+    "publish:packages": "yarn lerna run build && yarn lerna publish --yes"
   },
   "devDependencies": {
     "@emotion/core": "^10.0.16",
