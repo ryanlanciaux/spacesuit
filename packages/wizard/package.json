@@ -1,9 +1,9 @@
 {
-  "name": "@spacesuit/spacesuit",
-  "version": "0.0.16",
-  "main": "dist/spacesuit.js",
-  "umd:main": "dist/spacesuit.umd.js",
-  "module": "dist/spacesuit.m.js",
+  "name": "@spacesuit/wizard",
+  "version": "0.0.1",
+  "main": "dist/wizard.js",
+  "umd:main": "dist/wizard.umd.js",
+  "module": "dist/wizard.m.js",
   "source": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -49,23 +49,8 @@
     "react": "^16.8.0",
     "rebass": "^4.0.2"
   },
-  "dependencies": {
-    "@spacesuit/box": "^0.0.5",
-    "@spacesuit/button": "^0.0.4",
-    "@spacesuit/flex": "^0.0.5",
-    "@spacesuit/footer": "^0.0.7",
-    "@spacesuit/form": "^0.0.5",
-    "@spacesuit/header": "^0.0.7",
-    "@spacesuit/heading": "^0.0.4",
-    "@spacesuit/link": "^0.0.4",
-    "@spacesuit/modal": "^0.0.3",
-    "@spacesuit/navlist": "^0.0.5",
-    "@spacesuit/text": "^0.0.2",
-    "@spacesuit/theming": "^0.0.7",
-    "@spacesuit/wizard": "^0.0.1"
-  },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "5593715ae1e926604ff41202f535c64765860354"
+  "dependencies": {}
 }
