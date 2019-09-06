@@ -15,4 +15,5 @@ action "Publish" {
   needs = "Install"
   uses = "Borales/actions-yarn@0.0.1"
   args = "publish:packages"
+  secrets = ["npm_token"]
 }
