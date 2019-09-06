@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/spacesuit",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "main": "dist/spacesuit.js",
   "umd:main": "dist/spacesuit.umd.js",
   "module": "dist/spacesuit.m.js",
@@ -62,7 +62,7 @@
     "@spacesuit/navlist": "^0.0.5",
     "@spacesuit/text": "^0.0.2",
     "@spacesuit/theming": "^0.0.7",
-    "@spacesuit/wizard": "^0.0.1"
+    "@spacesuit/wizard": "^0.0.2"
   },
   "publishConfig": {
     "access": "public"
