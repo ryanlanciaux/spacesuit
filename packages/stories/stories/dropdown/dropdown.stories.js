@@ -31,12 +31,15 @@ const DropdownButton = props => {
 };
 storiesOf("dropdown", module).add("default", () => {
   return (
-    <Dropdown
-      buttonComponent={DropdownButton}
-      items={items}
-      onChange={action("SELECT")}
-    >
-      <li>Hi</li>
-    </Dropdown>
+    <>
+      <Dropdown
+        buttonComponent={DropdownButton}
+        items={items}
+        onChange={action("SELECT")}
+      >
+        Open this dropdown
+      </Dropdown>
+      <div style={{ backgroundColor: "#BAD", width: 600, height: 600 }} />
+    </>
   );
 });
