@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/theming",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/theming.js",
   "umd:main": "dist/theming.umd.js",
   "module": "dist/theming.m.js",

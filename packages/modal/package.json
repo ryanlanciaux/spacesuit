@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/modal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/modal.js",
   "umd:main": "dist/modal.umd.js",
   "module": "dist/modal.m.js",
@@ -51,8 +51,8 @@
   },
   "dependencies": {
     "@reach/dialog": "^0.2.9",
-    "@spacesuit/flex": "^0.0.5",
-    "@spacesuit/box": "^0.0.5"
+    "@spacesuit/box": "^0.0.5",
+    "@spacesuit/flex": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

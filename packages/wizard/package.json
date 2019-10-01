@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/wizard",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/wizard.js",
   "umd:main": "dist/wizard.umd.js",
   "module": "dist/wizard.m.js",

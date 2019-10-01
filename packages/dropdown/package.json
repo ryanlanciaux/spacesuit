@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/dropdown",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/dropdown.js",
   "umd:main": "dist/dropdown.umd.js",
   "module": "dist/dropdown.m.js",
@@ -46,10 +46,10 @@
     "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "rebass": "^4.0.2",
+    "@spacesuit/box": "^0.0.5",
     "@spacesuit/button": "^0.0.4",
-    "@spacesuit/box": "^0.0.5"
+    "react": "^16.8.0",
+    "rebass": "^4.0.2"
   },
   "dependencies": {
     "downshift": "^3.3.4"
