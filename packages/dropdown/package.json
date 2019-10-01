@@ -1,9 +1,9 @@
 {
-  "name": "@spacesuit/spacesuit",
-  "version": "0.0.17",
-  "main": "dist/spacesuit.js",
-  "umd:main": "dist/spacesuit.umd.js",
-  "module": "dist/spacesuit.m.js",
+  "name": "@spacesuit/dropdown",
+  "version": "0.0.1",
+  "main": "dist/dropdown.js",
+  "umd:main": "dist/dropdown.umd.js",
+  "module": "dist/dropdown.m.js",
   "source": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -47,26 +47,11 @@
   },
   "peerDependencies": {
     "react": "^16.8.0",
-    "rebass": "^4.0.2"
+    "rebass": "^4.0.2",
+    "@spacesuit/button": "^0.0.4",
+    "@spacesuit/box": "^0.0.5"
   },
   "dependencies": {
-    "@spacesuit/box": "^0.0.5",
-    "@spacesuit/button": "^0.0.4",
-    "@spacesuit/flex": "^0.0.5",
-    "@spacesuit/footer": "^0.0.7",
-    "@spacesuit/form": "^0.0.5",
-    "@spacesuit/header": "^0.0.7",
-    "@spacesuit/heading": "^0.0.4",
-    "@spacesuit/link": "^0.0.4",
-    "@spacesuit/modal": "^0.0.3",
-    "@spacesuit/navlist": "^0.0.5",
-    "@spacesuit/text": "^0.0.2",
-    "@spacesuit/theming": "^0.0.7",
-    "@spacesuit/wizard": "^0.0.2",
-    "@spacesuit/dropdown": "^0.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "5593715ae1e926604ff41202f535c64765860354"
+    "downshift": "^3.3.4"
+  }
 }

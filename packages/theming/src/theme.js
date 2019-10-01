@@ -9,6 +9,7 @@ export const theme = {
   fontSizes: [12, 14, 16, 24, 32, 48, 64],
   fonts: ["sans-serif"],
   colors: {
+    dropdownBg: "#EDEDED",
     white: "#FFF",
     primary: "#07c",
     active: "#47FF54",

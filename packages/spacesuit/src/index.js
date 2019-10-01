@@ -10,5 +10,6 @@ export { Nav as NavList, NavItem as NavListItem } from "@spacesuit/navlist";
 export { default as Text } from "@spacesuit/text";
 export { default as Modal } from "@spacesuit/modal";
 export { default as Wizard } from "@spacesuit/wizard";
+export { default as Dropdown } from "@spacesuit/dropdown";
 
 export * from "@spacesuit/form";
