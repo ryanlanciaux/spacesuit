@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/spacesuit",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "main": "dist/spacesuit.js",
   "umd:main": "dist/spacesuit.umd.js",
   "module": "dist/spacesuit.m.js",
@@ -52,7 +52,7 @@
   "dependencies": {
     "@spacesuit/box": "^0.0.5",
     "@spacesuit/button": "^0.0.4",
-    "@spacesuit/dropdown": "^0.0.3",
+    "@spacesuit/dropdown": "^0.0.4",
     "@spacesuit/flex": "^0.0.5",
     "@spacesuit/footer": "^0.0.7",
     "@spacesuit/form": "^0.0.5",

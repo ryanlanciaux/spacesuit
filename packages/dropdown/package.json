@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/dropdown",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/dropdown.js",
   "umd:main": "dist/dropdown.umd.js",
   "module": "dist/dropdown.m.js",
