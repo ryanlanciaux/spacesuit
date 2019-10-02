@@ -7,7 +7,37 @@ import { select } from "@storybook/addon-knobs";
 import Dropdown from "@spacesuit/dropdown";
 import { Text } from "@spacesuit/spacesuit";
 
-const items = [
+storiesOf("dropdown", module).add("default", () => {
+  return (
+    <>
+      <Dropdown toggleText="Open">
+        <Dropdown.Item
+          onSelect={() => {
+            alert("FIRST");
+          }}
+        >
+          First
+        </Dropdown.Item>
+        <Dropdown.Item
+          onSelect={() => {
+            alert("SECOND");
+          }}
+        >
+          Second
+        </Dropdown.Item>
+        <Dropdown.Item
+          onSelect={() => {
+            alert("THIRD");
+          }}
+        >
+          Third
+        </Dropdown.Item>
+      </Dropdown>
+      <div style={{ backgroundColor: "#BAD", width: 600, height: 600 }} />
+    </>
+  );
+});
+/*const items = [
   {
     value: "one",
     node: "FIRST ONE"
@@ -39,7 +69,6 @@ storiesOf("dropdown", module).add("default", () => {
       >
         Open this dropdown
       </Dropdown>
-      <div style={{ backgroundColor: "#BAD", width: 600, height: 600 }} />
     </>
   );
-});
+});*/

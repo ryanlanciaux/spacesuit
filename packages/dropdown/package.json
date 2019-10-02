@@ -52,7 +52,7 @@
     "rebass": "^4.0.2"
   },
   "dependencies": {
-    "downshift": "^3.3.4"
+    "@reach/menu-button": "^0.1.18"
   },
   "publishConfig": {
     "access": "public"
