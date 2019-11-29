@@ -8,7 +8,7 @@ import Flex from "@spacesuit/flex";
 storiesOf("Header", module).add("default", () => {
   return (
     <Header
-      bg="primary"
+      bg="rgba(150, 80, 0, .3);"
       backgroundUrl="https://source.unsplash.com/random/800x600"
       backgroundOpacity=".3"
       py={60}
