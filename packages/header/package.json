@@ -1,6 +1,6 @@
 {
   "name": "@spacesuit/header",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/header.js",
   "umd:main": "dist/header.umd.js",
   "module": "dist/header.m.js",
