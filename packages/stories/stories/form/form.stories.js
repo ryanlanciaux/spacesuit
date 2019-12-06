@@ -79,7 +79,7 @@ storiesOf("form", module).add("default", () => {
         <Checkbox name="otherMovie" id="other_a_new_hope">
           Star Wars IV
         </Checkbox>
-        <Checkbox name="otherMovie" id="other_empire">
+        <Checkbox name="otherMovie" id="other_empire" checked>
           Star Wars V
         </Checkbox>
         <Checkbox name="otherMovie" id="other_return_of_the_jedi">

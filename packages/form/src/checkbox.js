@@ -13,6 +13,7 @@ export function Checkbox({
   labelProps,
   inputProps,
   onChange,
+  checked,
   ...props
 }) {
   return (
@@ -25,6 +26,7 @@ export function Checkbox({
         variant="checkbox"
         name={fieldName}
         value={id}
+        checked={checked}
         {...inputProps}
       />
       <Box as="label" variant="label" htmlFor={id} {...labelProps}>
