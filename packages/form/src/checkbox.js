@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Children, cloneElement } from "react";
+import { Children, cloneElement, useState } from "react";
 import { FieldArray } from "formik";
 import { jsx } from "@emotion/core";
 import Box from "@spacesuit/box";
@@ -16,17 +16,21 @@ export function Checkbox({
   checked,
   ...props
 }) {
+  const [isChecked, setIsChecked] = useState(checked);
   return (
     <Flex {...props} variant="checkboxContainer">
       <Box
         as="input"
-        onChange={onChange}
+        onChange={val => {
+          setIsChecked(p => !p);
+          onChange(val);
+        }}
         id={id}
         type="checkbox"
         variant="checkbox"
         name={fieldName}
-        value={id}
-        checked={checked}
+        initialValue={checked}
+        checked={isChecked}
         {...inputProps}
       />
       <Box as="label" variant="label" htmlFor={id} {...labelProps}>
@@ -57,7 +61,7 @@ export function CheckboxGroup({
 }) {
   return (
     <FieldArray name={name}>
-      {({ push, remove, form }) => {
+      {({ push, remove, form, field }) => {
         const { errors, touched, values } = form;
         const isArray = children.length >= 1;
 
