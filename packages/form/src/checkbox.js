@@ -33,15 +33,7 @@ export function Checkbox({
         checked={isChecked}
         {...inputProps}
       />
-      <Box
-        as="label"
-        variant="label"
-        htmlFor={id}
-        {...labelProps}
-        onClick={() => {
-          setIsChecked(p => !p);
-        }}
-      >
+      <Box as="label" variant="label" htmlFor={id} {...labelProps}>
         {text}
       </Box>
     </Flex>
