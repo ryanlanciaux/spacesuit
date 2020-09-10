@@ -11,10 +11,11 @@ export function Input({
   as,
   type,
   inputProps,
+  component,
   ...props
 }) {
   return (
-    <Field name={name}>
+    <Field component={component} name={name}>
       {({ field, form }) => {
         const { errors, touched } = form;
 
@@ -55,5 +56,5 @@ export function Input({
 }
 
 Input.defaultProps = {
-  as: "input"
+  as: "input",
 };
