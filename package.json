@@ -1,6 +1,7 @@
 {
   "name": "root",
   "private": true,
+  "version": "0.0.25",
   "scripts": {
     "start": "yarn lerna run dev --parallel",
     "publish:packages": "yarn lerna run build && yarn lerna publish --yes"
